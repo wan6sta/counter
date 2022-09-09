@@ -15,7 +15,7 @@ const Display: FC<DisplayPropsType> = ({ counter, MIN_LIMIT, MAX_LIMIT }) => {
 
 	return (
 		<div className={className}>
-			<span>{counter}</span>
+			<span className={styles.animation}>{counter}</span>
 		</div>
 	)
 }

@@ -4,8 +4,8 @@ import Buttons from '../Buttons/Buttons'
 
 const Counter = () => {
 	const START_VALUE = 0
-	const MAX_LIMIT = 5
-	const MIN_LIMIT = -5
+	const MAX_LIMIT = 10
+	const MIN_LIMIT = -10
 
 	const [counter, setCounter] = useState(START_VALUE)
 
@@ -14,23 +14,18 @@ const Counter = () => {
 	const disableReset = counter === 0
 
 	const increment = () => {
-		if (disableInc) {
-			return
-		}
+		if (disableInc) return
 		setCounter(counter + 1)
 	}
 
 	const decrement = () => {
-		if (disableDec) {
-			return
-		}
+		if (disableDec) return
+
 		setCounter(counter - 1)
 	}
 
 	const reset = () => {
-		if (disableReset) {
-			return
-		}
+		if (disableReset) return
 		setCounter(0)
 	}
 
