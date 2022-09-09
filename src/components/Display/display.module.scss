@@ -1,0 +1,41 @@
+.counter {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #231F20;
+ font-size: 100px;
+ user-select: none;
+ height: 15rem;
+ transition: 0.25s ease-in-out;
+ animation: borderColor infinite 2s ease-in-out alternate;
+}
+
+.counterLast {
+ background-color: #231F20;
+ color: #A854A5;
+}
+
+.animation {
+ animation: upNumber infinite 2s ease-in-out alternate;
+}
+
+@keyframes upNumber {
+ from {
+  transform: scale(100%);
+ }
+
+ to {
+  transform: scale(105%);
+ }
+}
+
+@keyframes borderColor {
+ from {
+  border-bottom: 2px solid #231F20;
+ }
+
+ to {
+  border-bottom: 2px solid #A854A5;
+ }
+}
+

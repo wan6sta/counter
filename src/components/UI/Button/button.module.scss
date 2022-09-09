@@ -1,0 +1,30 @@
+.button {
+ background-color: #231F20;
+ width: 100px;
+ height: 50px;
+ color: #A854A5;
+ font-size: 25px;
+ transition: .1s ease-in-out;
+ user-select: none;
+
+ &:hover {
+  background-color: rgba(35, 31, 32, 0.9);
+ }
+
+ &:active {
+  transform: translateY(2px);
+ }
+}
+
+.disabled {
+ opacity: 0.5;
+
+ &:hover {
+  background-color: #231F20;
+ }
+
+ &:active {
+  transform: translateY(0);
+ }
+}
+
