@@ -122,8 +122,8 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  max-width: 26rem;
-  height: 26rem;
+  max-width: 30rem;
+  height: 30em;
   animation: boxShadow infinite 2s ease-in-out alternate;
   background-color: #A854A5;
 }

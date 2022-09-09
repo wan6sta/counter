@@ -3,17 +3,19 @@ import styles from './display.module.scss'
 
 type DisplayPropsType = {
 	counter: number
+	MIN_LIMIT: number
+	MAX_LIMIT: number
 }
 
-const Display: FC<DisplayPropsType> = ({ counter }) => {
+const Display: FC<DisplayPropsType> = ({ counter, MIN_LIMIT, MAX_LIMIT }) => {
 	const className =
-		counter === 5 || counter === -5
+		counter === MIN_LIMIT || counter === MAX_LIMIT
 			? `${styles.counter} ${styles.counterLast}`
 			: styles.counter
 
 	return (
 		<div className={className}>
-			<span className={styles.animation}>{counter}</span>
+			<span>{counter}</span>
 		</div>
 	)
 }

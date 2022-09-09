@@ -11,13 +11,13 @@ type ButtonsPropsType = {
 }
 
 const Buttons: FC<ButtonsPropsType> = ({
-																				 increment,
-																				 reset,
-																				 disableInc,
-																				 disableReset,
-																				 disableDec,
-																				 decrement
-																			 }) => {
+	increment,
+	reset,
+	disableInc,
+	disableReset,
+	disableDec,
+	decrement
+}) => {
 	return (
 		<div className='buttons'>
 			<Button disabled={disableDec} onClick={decrement}>
@@ -27,7 +27,7 @@ const Buttons: FC<ButtonsPropsType> = ({
 			<Button disabled={disableInc} onClick={increment}>
 				Inc
 			</Button>
-			
+
 			<Button disabled={disableReset} onClick={reset}>
 				Reset
 			</Button>
